@@ -31,9 +31,18 @@ Shoes.app :width => 260,
 
   def update_pomo_count
   @pomo_text.clear do
-    para "pomos completed: #{@pomo_count}", 
-          :align => "center", 
-          :margin_top => 16
+      if @pomo_count > 3
+        para "Break Time!",
+            :align => "center", 
+            :margin_top => 16
+        @pomo_count = 0
+        @seconds = 1500
+        @seconds_previous = 1500
+      else
+        para "pomos completed: #{@pomo_count}", 
+            :align => "center", 
+            :margin_top => 16
+      end
     end
   end
 
