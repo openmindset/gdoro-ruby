@@ -74,6 +74,8 @@ Shoes.app :width => 260,
       @seconds -= 1 unless @paused
       display_time
     else
+      # detect if the last pomo completed was a 25 cycle or a 5 break
+      # also, when pomo complete count is 4, notify to take break
       @pomo_count += 1
       @paused = !@paused
       @seconds = 300
