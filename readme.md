@@ -1,5 +1,4 @@
-# gdoro
-## This is a work in progress. Expect general bugginess.
+## gdoro
 
 A simple timer for the [Pomodoro Technique ®](http://pomodorotechnique.com/).
 
@@ -11,6 +10,6 @@ Usage:
    $ ruby gdoro-ruby.rb
 
 Todo:
-* Code the timer reset to 25:00
+* Detect when 4 cycles are done and switch to 30:00 break
 * Add tray notifications for gnome-applet
 * Put some shine on dat app
